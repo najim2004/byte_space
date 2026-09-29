@@ -3,73 +3,73 @@ import Image from "next/image";
 export function CtaSection() {
   return (
     <section className="bg-hero-grid bg-primary-800 relative flex min-h-122 w-full items-center justify-center overflow-hidden py-18 lg:py-0">
-      <div className="animate-float pointer-events-none absolute -top-12 -left-12 z-0 size-44 -rotate-45 select-none lg:size-64">
+      <div className="animate-float pointer-events-none absolute -top-40 -left-30 z-0 size-44 -rotate-45 select-none lg:size-96.25">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-yellow.png"
           alt="Yellow Coil"
           width={256}
           height={256}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-50 object-contain"
         />
       </div>
 
-      <div className="animate-float-slow pointer-events-none absolute top-4 left-[14%] z-0 size-24 rotate-12 select-none lg:size-36">
+      <div className="animate-float-slow pointer-events-none absolute top-4 left-[13%] z-0 size-24 rotate-12 select-none lg:size-36">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-gray.png"
           alt="White Zigzag"
           width={144}
           height={144}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full -rotate-15 object-contain"
         />
       </div>
 
-      <div className="animate-float-reverse pointer-events-none absolute bottom-6 left-[1%] z-0 size-28 -rotate-12 select-none lg:size-36">
+      <div className="animate-float-reverse pointer-events-none absolute bottom-[20%] left-[-2%] z-0 size-28 -rotate-12 select-none lg:size-47">
         <Image
           src="/assets/svgs/shapes/cone-gray.png"
           alt="White Cone"
           width={144}
           height={144}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-10 object-contain"
         />
       </div>
 
-      <div className="animate-float pointer-events-none absolute -bottom-24 left-[5%] z-0 size-44 rotate-45 select-none lg:size-64">
+      <div className="animate-float pointer-events-none absolute bottom-[-30%] left-[5%] z-0 size-44 rotate-45 select-none lg:size-85.5">
         <Image
           src="/assets/svgs/shapes/shape-ring-yellow.png"
           alt="Yellow Ring"
           width={256}
           height={256}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-130 object-contain"
         />
       </div>
 
-      <div className="animate-float-slow pointer-events-none absolute top-4 right-[15%] z-0 size-32 rotate-12 select-none lg:size-44">
+      <div className="animate-float-slow pointer-events-none absolute top-[5%] right-[15%] z-0 size-32 rotate-12 select-none lg:size-47">
         <Image
           src="/assets/svgs/shapes/hero-shape-triangle-yellow.png"
           alt="Yellow Pyramid"
           width={176}
           height={176}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-[-10deg] object-contain"
         />
       </div>
 
-      <div className="animate-float-reverse pointer-events-none absolute -top-8 -right-12 z-0 size-48 rotate-12 select-none lg:size-64">
+      <div className="animate-float-reverse pointer-events-none absolute top-[10%] right-[-7%] z-0 size-48 rotate-12 select-none lg:size-92.5">
         <Image
           src="/assets/svgs/shapes/shape-cylinder-gray.png"
           alt="White Cylinder"
           width={256}
           height={256}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-[-10deg] object-contain"
         />
       </div>
 
-      <div className="animate-float pointer-events-none absolute right-[5%] -bottom-12 z-0 size-44 rotate-12 select-none lg:size-64">
+      <div className="animate-float pointer-events-none absolute right-[5%] bottom-[-25%] z-0 size-44 rotate-12 select-none lg:size-82.5">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-yellow.png"
           alt="Yellow Coil"
           width={256}
           height={256}
-          className="h-auto w-full object-contain"
+          className="h-auto w-full rotate-[-60deg] object-contain"
         />
       </div>
 
