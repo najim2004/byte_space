@@ -116,13 +116,13 @@ export function FeaturesSection() {
           </div>
 
           <div className="relative flex h-120 w-full max-w-125 items-center justify-center sm:h-138 sm:max-w-155.25">
-            <div className="animate-float pointer-events-none absolute top-[12%] right-[5%] z-0 w-45 select-none sm:right-[10%] sm:w-53.75">
+            <div className="animate-float pointer-events-none absolute top-[10%] right-[5%] z-40 w-45 select-none sm:right-[-5%] sm:size-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
                 alt="Yellow Coil"
                 width={215}
                 height={215}
-                className="h-auto w-full object-contain"
+                className="h-auto w-full rotate-130 object-contain"
               />
             </div>
 
@@ -218,17 +218,17 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            <div className="relative z-20 h-120 w-112.5 sm:h-135 sm:w-144.25">
+            <div className="relative top-15 -right-10 z-20 h-120 w-112.5 sm:h-135 sm:w-144.25">
               <Image
-                src="/assets/images/home/feature-student-1.png"
+                src="/assets/images/home/feature-student-1.svg"
                 alt="Student Learning"
                 fill
                 sizes="(max-width: 768px) 100vw, 577px"
-                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+                className="object-contain"
               />
             </div>
 
-            <div className="absolute top-53.25 right-0 z-30 flex w-50 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
+            <div className="absolute top-50 right-5 z-30 flex w-50 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
               <span className="font-satoshi text-sm font-medium text-neutral-950">
                 Learning Progress
               </span>
@@ -244,7 +244,7 @@ export function FeaturesSection() {
 
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-19.75">
           <div className="relative order-2 flex h-125 w-full max-w-125 items-center justify-center sm:h-149 sm:max-w-135.25 lg:order-1">
-            <div className="animate-float-slow pointer-events-none absolute top-[19%] right-[10%] z-0 w-45 select-none sm:w-53.75">
+            <div className="animate-float-slow pointer-events-none absolute top-[19%] right-[10%] z-40 w-45 select-none sm:w-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
                 alt="Yellow Coil"
@@ -295,17 +295,16 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            <div className="relative z-20 h-125 w-95 sm:h-149 sm:w-108.75">
+            <div className="relative -bottom-10 z-30 h-125 w-95 sm:h-149 sm:w-135.25">
               <Image
                 src="/assets/images/home/feature-student-2.png"
                 alt="Student Creator"
                 fill
-                sizes="(max-width: 768px) 100vw, 435px"
-                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+                className="h-full w-full object-cover"
               />
             </div>
 
-            <div className="absolute right-0 bottom-0 z-30 flex w-57.5 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-64.5">
+            <div className="absolute right-0 bottom-25 z-30 flex w-57.5 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-64.5">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-950 sm:text-base">
                   Happy Students
@@ -325,7 +324,7 @@ export function FeaturesSection() {
               </div>
 
               <div className="flex items-center">
-                {STUDENT_AVATARS_FEATURE_2.slice(0, 5).map((src, i) => (
+                {STUDENT_AVATARS_FEATURE_2.map((src, i) => (
                   <div
                     key={i}
                     className="-ml-3.5 size-9 overflow-hidden rounded-full first:ml-0"
