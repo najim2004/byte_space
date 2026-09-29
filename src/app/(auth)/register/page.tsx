@@ -23,8 +23,9 @@ const HAPPY_STUDENT_AVATARS = [
   "/assets/images/avatars/avatar-7.png",
 ];
 
-export default function LoginPage() {
+export default function RegisterPage() {
   const [formData, setFormData] = useState({
+    fullName: "",
     email: "",
     password: "",
   });
@@ -52,11 +53,12 @@ export default function LoginPage() {
         <div className="flex w-full max-w-135 flex-col gap-10">
           <div className="flex flex-col gap-4">
             <h1 className="font-poppins text-xl font-semibold tracking-[-0.01em] text-[#F5F5F6] sm:text-2xl">
-              Sign in with ease
+              Sign up and come in
             </h1>
             <p className="font-satoshi max-w-119 text-base leading-[1.6] text-[#F5F5F6] sm:text-lg">
-              Experience a seamless and efficient sign-in process that grants
-              you instant access to a world of knowledge.
+              The registration process is straightforward, uncomplicated, and
+              efficient, allowing users to sign up quickly, easily, and at no
+              cost
             </p>
           </div>
 
@@ -313,14 +315,34 @@ export default function LoginPage() {
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-2">
               <span className="font-satoshi text-primary-800 text-lg font-normal">
-                Sign In
+                Create an Account
               </span>
               <h2 className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-[#242528] sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
-                Welcome Back
+                Welcome to ByteSpace
               </h2>
             </div>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="fullName"
+                  className="font-satoshi text-sm font-medium text-[#242528]"
+                >
+                  Full Name
+                </label>
+                <input
+                  id="fullName"
+                  type="text"
+                  placeholder="Jamie Davis"
+                  value={formData.fullName}
+                  onChange={(e) =>
+                    setFormData({ ...formData, fullName: e.target.value })
+                  }
+                  required
+                  className="font-satoshi h-13 w-full rounded-xl border border-[#E5E6E8] bg-white px-6 text-lg text-[#242528] placeholder:text-[#82868E] focus:border-[#003BE2] focus:outline-none"
+                />
+              </div>
+
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
@@ -366,59 +388,21 @@ export default function LoginPage() {
                   type="submit"
                   className="bg-secondary-400 hover:bg-secondary-500 font-satoshi h-11.5 rounded-full px-8 text-lg font-medium text-[#242528] shadow-none transition-all duration-200"
                 >
-                  Sign In
+                  Continue
                 </Button>
               </div>
             </form>
 
-            <div className="flex flex-col items-center gap-6">
-              <div className="flex w-full items-center gap-3">
-                <div className="h-px flex-1 bg-[#D1D1D1]" />
-                <span className="font-satoshi text-lg text-[#888888]">or</span>
-                <div className="h-px flex-1 bg-[#D1D1D1]" />
-              </div>
-
-              <div className="flex items-center justify-center gap-4">
-                <button
-                  type="button"
-                  aria-label="Sign in with Facebook"
-                  className="flex size-18 items-center justify-center rounded-3xl border border-[#D1D1D1] bg-white transition-colors hover:bg-neutral-50"
-                >
-                  <svg
-                    className="size-8 text-black"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
-                  </svg>
-                </button>
-
-                <button
-                  type="button"
-                  aria-label="Sign in with Google"
-                  className="flex size-18 items-center justify-center rounded-3xl border border-[#D1D1D1] bg-white transition-colors hover:bg-neutral-50"
-                >
-                  <svg
-                    className="size-8 text-black"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M12.24 10.285v3.608h6.883c-.287 1.884-2.222 5.517-6.883 5.517-4.144 0-7.521-3.377-7.521-7.521s3.377-7.521 7.521-7.521c2.355 0 3.927.998 4.825 1.868l2.846-2.738C17.653 1.848 15.176.88 12.24.88 6.13.88 1.18 5.83 1.18 11.94s4.95 11.06 11.06 11.06c6.384 0 10.627-4.488 10.627-10.814 0-.728-.079-1.282-.176-1.901H12.24z" />
-                  </svg>
-                </button>
-              </div>
-
-              <div className="flex items-center justify-center gap-1.5 pt-2 text-center">
-                <span className="font-satoshi text-base text-[#888888]">
-                  New user?
-                </span>
-                <Link
-                  href="/register"
-                  className="font-satoshi text-primary-800 text-base font-medium hover:underline"
-                >
-                  Create an account
-                </Link>
-              </div>
+            <div className="flex items-center justify-center gap-1.5 pt-6 text-center">
+              <span className="font-satoshi text-base text-[#4B4C53]">
+                Already have an account?
+              </span>
+              <Link
+                href="/login"
+                className="font-satoshi text-primary-800 text-base font-medium hover:underline"
+              >
+                Login
+              </Link>
             </div>
           </div>
         </div>
