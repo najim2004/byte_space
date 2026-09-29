@@ -23,7 +23,6 @@ interface CourseCardProps {
 export function CourseCard({ course }: CourseCardProps) {
   return (
     <Card className="group flex h-96 w-full max-w-93.25 flex-col justify-between overflow-hidden rounded-3xl border border-neutral-200 bg-white p-4 shadow-none transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-      {/* Thumbnail Container */}
       <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl bg-neutral-100">
         <Image
           src={course.image}
@@ -33,7 +32,6 @@ export function CourseCard({ course }: CourseCardProps) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
-        {/* Overlaid Badges */}
         <div className="absolute inset-x-2.5 bottom-2.5 flex items-center justify-between gap-1">
           <span className="font-satoshi rounded-full bg-neutral-900/40 px-2.5 py-1 text-[11px] font-normal text-white backdrop-blur-md">
             {course.lessons}
@@ -47,9 +45,7 @@ export function CourseCard({ course }: CourseCardProps) {
         </div>
       </div>
 
-      {/* Course Info */}
       <div className="mt-4 flex flex-col gap-3">
-        {/* Title & Rating */}
         <div>
           <div className="flex items-center justify-between gap-2">
             <h3 className="font-poppins truncate text-lg font-semibold text-neutral-950 sm:text-xl">
@@ -74,9 +70,7 @@ export function CourseCard({ course }: CourseCardProps) {
           </p>
         </div>
 
-        {/* Level & Enrolled Avatars */}
         <div className="flex items-center justify-between pt-1">
-          {/* Level Pill */}
           <div className="font-satoshi flex items-center gap-1.5 rounded-full bg-neutral-100/90 px-3 py-1.5 text-xs font-medium text-neutral-700">
             <Image
               src="/assets/svgs/icons/lavel-gray.svg"
@@ -88,7 +82,6 @@ export function CourseCard({ course }: CourseCardProps) {
             <span>{course.level}</span>
           </div>
 
-          {/* Overlapping Avatar Group */}
           <AvatarGroup className="-space-x-2.5">
             {STUDENT_AVATARS.map((src, i) => (
               <Avatar key={i} className="size-6.5 border-0 ring-0!">
@@ -105,7 +98,6 @@ export function CourseCard({ course }: CourseCardProps) {
           </AvatarGroup>
         </div>
 
-        {/* Price */}
         <div className="flex items-baseline pt-1">
           <span className="font-poppins text-primary-800 text-xl font-bold">
             ${course.price}

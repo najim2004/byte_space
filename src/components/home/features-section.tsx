@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Check } from "lucide-react";
 
@@ -30,10 +28,6 @@ const CREATOR_CHECKLIST = [
 export function FeaturesSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#FAFAFA] py-20 lg:py-30">
-      {/* =========================================================================
-          FIGMA GROUP 5: 5 BACKGROUND ELLIPSE GLOWS
-         ========================================================================= */}
-      {/* Ellipse 11 (Top Left Lime Glow) */}
       <div
         className="pointer-events-none absolute -top-116.5 -left-38 h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -42,7 +36,6 @@ export function FeaturesSection() {
         }}
       />
 
-      {/* Ellipse 10 (Top Right Blue Glow) */}
       <div
         className="pointer-events-none absolute -top-114.5 left-202.75 h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -51,7 +44,6 @@ export function FeaturesSection() {
         }}
       />
 
-      {/* Ellipse 9 (Mid Left Blue Glow) */}
       <div
         className="pointer-events-none absolute top-45.75 -left-127 h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -60,7 +52,6 @@ export function FeaturesSection() {
         }}
       />
 
-      {/* Ellipse 8 (Bottom Right Blue Glow) */}
       <div
         className="pointer-events-none absolute top-197 left-180.5 h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -69,7 +60,6 @@ export function FeaturesSection() {
         }}
       />
 
-      {/* Ellipse 12 (Bottom Left Lime Glow) */}
       <div
         className="pointer-events-none absolute top-236.5 -left-71.75 h-168 w-2xl rounded-full blur-[20px]"
         style={{
@@ -78,17 +68,9 @@ export function FeaturesSection() {
         }}
       />
 
-      {/* =========================================================================
-          FIGMA FRAME 16: MAIN CONTENT (GAP 72px)
-         ========================================================================= */}
       <div className="relative z-10 mx-auto flex w-full max-w-314.5 flex-col gap-18 px-4 sm:px-6 lg:px-0">
-        {/* =======================================================================
-            FRAME 13: FEATURE 1 (Text Left, Visual Right)
-           ======================================================================= */}
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-15.75">
-          {/* Text Column (574px) */}
           <div className="flex w-full max-w-143.5 flex-col gap-10">
-            {/* Heading & Paragraph */}
             <div className="flex flex-col gap-4">
               <h2 className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
                 Your Path to Professional <br className="hidden sm:inline" />
@@ -103,9 +85,7 @@ export function FeaturesSection() {
               </p>
             </div>
 
-            {/* 3 Stats (Horizontal Layout, Gap 56px) */}
             <div className="flex items-end gap-8 sm:gap-14">
-              {/* Stat 1: 12K */}
               <div className="flex flex-col items-start">
                 <span className="font-poppins text-primary-800 text-3xl font-medium tracking-[-0.01em] sm:text-4xl lg:text-[36px] lg:leading-11">
                   12K
@@ -115,7 +95,6 @@ export function FeaturesSection() {
                 </span>
               </div>
 
-              {/* Stat 2: 70+ */}
               <div className="flex flex-col items-start">
                 <span className="font-poppins text-primary-800 text-3xl font-medium tracking-[-0.01em] sm:text-4xl lg:text-[36px] lg:leading-11">
                   70+
@@ -125,7 +104,6 @@ export function FeaturesSection() {
                 </span>
               </div>
 
-              {/* Stat 3: 16 */}
               <div className="flex flex-col items-start">
                 <span className="font-poppins text-primary-800 text-3xl font-medium tracking-[-0.01em] sm:text-4xl lg:text-[36px] lg:leading-11">
                   16
@@ -137,9 +115,7 @@ export function FeaturesSection() {
             </div>
           </div>
 
-          {/* Right Visual (Frame 11: 621px x 552px) */}
           <div className="relative flex h-120 w-full max-w-125 items-center justify-center sm:h-138 sm:max-w-155.25">
-            {/* 3D Yellow Coil in background */}
             <div className="animate-float pointer-events-none absolute top-[12%] right-[5%] z-0 w-45 select-none sm:right-[10%] sm:w-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
@@ -150,9 +126,7 @@ export function FeaturesSection() {
               />
             </div>
 
-            {/* Course Card 1 (Top Left) */}
             <div className="absolute top-0 left-0 z-10 hidden w-93.25 flex-col rounded-3xl border border-neutral-200 bg-white p-4 shadow-sm md:flex">
-              {/* Thumbnail Container */}
               <div className="relative h-48.75 w-full overflow-hidden rounded-[12px] bg-neutral-100">
                 <Image
                   src="/assets/images/courses/course-1.avif"
@@ -161,7 +135,6 @@ export function FeaturesSection() {
                   sizes="341px"
                   className="object-cover"
                 />
-                {/* 3 Badges Overlay */}
                 <div className="absolute top-37.5 left-3 flex items-center gap-3">
                   <span className="font-satoshi rounded-3xl bg-[#F6F6F6]/60 px-3 py-1.5 text-xs font-medium text-[#4F4F4F] backdrop-blur-xs">
                     17 Lessons
@@ -175,9 +148,7 @@ export function FeaturesSection() {
                 </div>
               </div>
 
-              {/* Card Body */}
               <div className="mt-4 flex flex-col gap-4">
-                {/* Title & Rating */}
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col">
                     <h3 className="font-poppins text-xl font-semibold tracking-[-0.01em] text-black">
@@ -201,9 +172,7 @@ export function FeaturesSection() {
                   </div>
                 </div>
 
-                {/* Level & Avatars */}
                 <div className="flex items-center justify-between">
-                  {/* Level Pill */}
                   <div className="font-satoshi flex items-center gap-1 rounded-3xl bg-neutral-50 px-3 py-1.5 text-xs font-medium text-neutral-700">
                     <Image
                       src="/assets/svgs/icons/lavel-gray.svg"
@@ -215,7 +184,6 @@ export function FeaturesSection() {
                     <span>Beginner</span>
                   </div>
 
-                  {/* Overlapping Avatars + 26+ Black Circle */}
                   <div className="flex items-center">
                     {STUDENT_AVATARS_FEATURE_1.map((src, i) => (
                       <div
@@ -239,7 +207,6 @@ export function FeaturesSection() {
                   </div>
                 </div>
 
-                {/* Price */}
                 <div className="flex items-baseline">
                   <span className="font-poppins text-primary-800 text-xl font-medium tracking-[-0.01em]">
                     $25
@@ -251,7 +218,6 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            {/* Student 1 Photo */}
             <div className="relative z-20 h-120 w-112.5 sm:h-135 sm:w-144.25">
               <Image
                 src="/assets/images/home/feature-student-1.png"
@@ -262,7 +228,6 @@ export function FeaturesSection() {
               />
             </div>
 
-            {/* Learning Progress Card (Floating Mid-Right) */}
             <div className="absolute top-53.25 right-0 z-30 flex w-50 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
               <span className="font-satoshi text-sm font-medium text-neutral-950">
                 Learning Progress
@@ -270,7 +235,6 @@ export function FeaturesSection() {
               <span className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-[48px] sm:leading-[1.2]">
                 55%
               </span>
-              {/* Custom Progress Bar */}
               <div className="relative h-2 w-full overflow-hidden rounded-3xl bg-[#F6F6F6]">
                 <div className="bg-secondary-400 h-full w-[55%] rounded-3xl" />
               </div>
@@ -278,13 +242,8 @@ export function FeaturesSection() {
           </div>
         </div>
 
-        {/* =======================================================================
-            FRAME 14: FEATURE 2 (Visual Left, Text Right)
-           ======================================================================= */}
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-19.75">
-          {/* Left Visual (Frame 12: 541px x 596px) */}
           <div className="relative order-2 flex h-125 w-full max-w-125 items-center justify-center sm:h-149 sm:max-w-135.25 lg:order-1">
-            {/* 3D Yellow Coil in background */}
             <div className="animate-float-slow pointer-events-none absolute top-[19%] right-[10%] z-0 w-45 select-none sm:w-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
@@ -295,7 +254,6 @@ export function FeaturesSection() {
               />
             </div>
 
-            {/* Total Revenue Card (Top Left) */}
             <div className="bg-primary-800 absolute top-11 left-0 z-30 flex w-47.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-50 sm:text-base">
@@ -313,13 +271,11 @@ export function FeaturesSection() {
                   +12$
                 </span>
               </div>
-              {/* Progress Bar */}
               <div className="relative h-2 w-full overflow-hidden rounded-3xl bg-white">
                 <div className="bg-secondary-400 h-full w-[56%] rounded-3xl" />
               </div>
             </div>
 
-            {/* Year to Date Card (Mid Left) */}
             <div className="bg-primary-800 absolute top-48.5 left-0 z-30 flex w-33.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px]">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-50 sm:text-base">
@@ -339,7 +295,6 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            {/* Student 2 Photo */}
             <div className="relative z-20 h-125 w-95 sm:h-149 sm:w-108.75">
               <Image
                 src="/assets/images/home/feature-student-2.png"
@@ -350,7 +305,6 @@ export function FeaturesSection() {
               />
             </div>
 
-            {/* Happy Students Card (Bottom Right) */}
             <div className="absolute right-0 bottom-0 z-30 flex w-57.5 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-64.5">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-950 sm:text-base">
@@ -370,7 +324,6 @@ export function FeaturesSection() {
                 </div>
               </div>
 
-              {/* Overlapping Avatars + 2K+ Lime Circle */}
               <div className="flex items-center">
                 {STUDENT_AVATARS_FEATURE_2.slice(0, 5).map((src, i) => (
                   <div
@@ -395,9 +348,7 @@ export function FeaturesSection() {
             </div>
           </div>
 
-          {/* Right Text Column (580px) */}
           <div className="order-1 flex w-full max-w-145 flex-col gap-10 lg:order-2">
-            {/* Heading & Paragraph */}
             <div className="flex flex-col gap-4">
               <h2 className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-4xl lg:w-97.75 lg:text-[44px] lg:leading-[1.2]">
                 Create & Manage <br className="hidden sm:inline" />
@@ -409,7 +360,6 @@ export function FeaturesSection() {
               </p>
             </div>
 
-            {/* Checklist (Auto Layout Vertical, Gap 16px) */}
             <ul className="flex flex-col gap-4">
               {CREATOR_CHECKLIST.map((item, index) => (
                 <li key={index} className="flex items-center gap-2">

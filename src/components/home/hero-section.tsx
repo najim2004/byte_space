@@ -30,7 +30,6 @@ export function HeroSection() {
           Get Access to Hundreds <br /> Courses Available
         </h1>
       </div>
-      {/* 3D Shape 2: Top Right Yellow Cylinder */}
       <div className="animate-float pointer-events-none absolute top-1/2 right-[-9%] z-0 size-93 -translate-y-1/2 select-none">
         <Image
           src="/assets/svgs/shapes/shape-cylinder-yellow.png"
@@ -41,7 +40,6 @@ export function HeroSection() {
         />
       </div>
       <div className="relative mt-24 min-h-132.5 w-full grow">
-        {/* Big Yellow Arc in the Background */}
         <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-300 -translate-x-1/2">
           <Image
             src="/assets/svgs/shapes/hero-bg-circle-yellow.svg"
@@ -52,7 +50,6 @@ export function HeroSection() {
             className="h-auto w-full object-contain"
           />
         </div>
-        {/* Center Student Photo */}
         <div className="pointer-events-none absolute bottom-0 left-1/2 z-15 h-128 w-144.5 -translate-x-1/2">
           <Image
             src="/assets/images/home/hero-student.png"
@@ -64,7 +61,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* 3D Shape 1: Top Center Yellow Coil */}
         <div className="animate-float-slow pointer-events-none absolute top-[-60%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-yellow.png"
@@ -76,7 +72,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* 3D Shape 3: Left White Zigzag */}
         <div className="animate-float-reverse pointer-events-none absolute top-[-5%] left-[20%] z-10 w-44 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-gray.png"
@@ -87,7 +82,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* 3D Shape 4: Middle Right White Pyramid */}
         <div className="animate-float pointer-events-none absolute top-[0%] right-[20%] z-10 w-47 select-none">
           <Image
             src="/assets/svgs/shapes/hero-shape-triangle-white.svg"
@@ -98,7 +92,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* 3D Shape 5: Bottom Left White Torus */}
         <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[11%] z-20 size-85.5 border select-none">
           <Image
             src="/assets/svgs/shapes/shape-ring-gray.png"
@@ -109,7 +102,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* 3D Shape 6: Bottom Right White Zigzag */}
         <div className="animate-float-reverse pointer-events-none absolute right-[9.5%] bottom-[0%] z-20 w-82.5 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-gray.png"
@@ -120,7 +112,6 @@ export function HeroSection() {
           />
         </div>
 
-        {/* Floating Card 1: UI/UX Design (shadcn Card) */}
         <Card className="absolute top-[30%] left-[30.5%] z-30 gap-1 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <h4 className="font-satoshi text-sm leading-none font-semibold text-neutral-950 sm:text-base">
             UI/UX Design
@@ -132,7 +123,6 @@ export function HeroSection() {
           </p>
         </Card>
 
-        {/* Floating Card 2: Learning Progress (shadcn Card + Progress) */}
         <Card className="absolute top-[29%] right-[30%] z-30 w-56 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <span className="font-satoshi block text-sm leading-none font-medium text-neutral-950">
             Learning Progress
@@ -147,7 +137,6 @@ export function HeroSection() {
           />
         </Card>
 
-        {/* Floating Card 3: Happy Students (shadcn Card + AvatarGroup + Badge) */}
         <Card className="absolute bottom-[10%] left-[29%] z-30 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <div className="flex flex-col">
             <span className="font-satoshi text-sm leading-none font-semibold text-neutral-900 sm:text-base">

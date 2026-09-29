@@ -11,7 +11,6 @@ export function Navbar() {
 
   return (
     <header className="relative z-40 mx-auto flex w-full max-w-300 items-center justify-between px-6 py-8.75 lg:px-0">
-      {/* Logo */}
       <Link
         href="/"
         className="flex items-center transition-opacity hover:opacity-90"
@@ -26,7 +25,6 @@ export function Navbar() {
         />
       </Link>
 
-      {/* Nav Menu (Center) */}
       <nav className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-7 md:flex lg:gap-8">
         <Link
           href="/"
@@ -48,7 +46,6 @@ export function Navbar() {
         </Link>
       </nav>
 
-      {/* Right Menu: Sign In, Join Us, Cart */}
       <div className="hidden items-center gap-6 md:flex">
         <Link
           href="/login"
@@ -72,7 +69,6 @@ export function Navbar() {
         </Button>
       </div>
 
-      {/* Mobile trigger */}
       <div className="flex items-center gap-3 md:hidden">
         <Button
           variant="ghost"
@@ -97,7 +93,6 @@ export function Navbar() {
         </Button>
       </div>
 
-      {/* Mobile Dropdown */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 z-50 w-full border-b border-white/10 bg-[#003BE2]/95 px-6 py-6 shadow-2xl backdrop-blur-lg md:hidden">
           <nav className="flex flex-col gap-4">

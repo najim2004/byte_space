@@ -9,7 +9,6 @@ interface LearningPathCardProps {
 export function LearningPathCard({ item }: LearningPathCardProps) {
   return (
     <Card className="group flex aspect-square w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-3xl border border-neutral-200 bg-white p-4 shadow-none transition-all duration-300 select-none hover:-translate-y-1 hover:shadow-md">
-      {/* Icon Frame (Frame 4) */}
       <div className="relative flex size-15 items-center justify-center">
         <Image
           src={item.icon}
@@ -20,7 +19,6 @@ export function LearningPathCard({ item }: LearningPathCardProps) {
         />
       </div>
 
-      {/* Title Label */}
       <span className="font-satoshi text-center text-xl leading-[1.2] font-medium text-neutral-950">
         {item.title}
       </span>

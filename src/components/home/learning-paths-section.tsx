@@ -38,7 +38,6 @@ export function LearningPathsSection() {
   return (
     <section className="relative w-full bg-white py-18">
       <div className="mx-auto flex w-full max-w-300 flex-col items-center px-4 sm:px-6 lg:px-8">
-        {/* Header (Frame 9) */}
         <div className="flex flex-col items-center gap-4 text-center">
           <h2 className="font-poppins text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl lg:text-[36px] lg:leading-[1.2]">
             Explore Diverse Learning Paths at Bytespace
@@ -51,7 +50,6 @@ export function LearningPathsSection() {
           </p>
         </div>
 
-        {/* Categories Cards Container (Frame 10) */}
         <div className="mt-12 grid w-full max-w-300 grid-cols-2 gap-6 sm:mt-16 sm:grid-cols-3 sm:gap-8 lg:grid-cols-6 lg:gap-10">
           {LEARNING_PATHS.map((item) => (
             <LearningPathCard key={item.id} item={item} />

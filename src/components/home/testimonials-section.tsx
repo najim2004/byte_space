@@ -31,7 +31,6 @@ const TESTIMONIALS: Testimonial[] = [
 export function TestimonialsSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#FAFAFA] py-18 lg:py-18.5">
-      {/* Figma Ellipse 11 (Top Right Lime Glow) */}
       <div
         className="pointer-events-none absolute -top-60 right-[-10%] h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -40,7 +39,6 @@ export function TestimonialsSection() {
         }}
       />
 
-      {/* Figma Ellipse 12 (Top Center Lime Glow) */}
       <div
         className="pointer-events-none absolute -top-34.5 left-[30%] h-168 w-2xl rounded-full blur-[20px]"
         style={{
@@ -49,7 +47,6 @@ export function TestimonialsSection() {
         }}
       />
 
-      {/* Figma Ellipse 8 (Bottom Left Blue Glow) */}
       <div
         className="pointer-events-none absolute top-37.25 left-[-30%] h-284.25 w-284.25 rounded-full blur-[20px]"
         style={{
@@ -58,15 +55,11 @@ export function TestimonialsSection() {
         }}
       />
 
-      {/* Main Content Container (Frame / Content) */}
       <div className="relative z-10 mx-auto flex w-full max-w-301 flex-col gap-18 px-4 sm:px-6 lg:px-0">
-        {/* Text Container */}
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end lg:gap-10.75">
-          {/* Title */}
           <h2 className="font-poppins text-3xl font-semibold tracking-tight text-black sm:text-4xl lg:w-144.25 lg:text-[44px] lg:leading-[1.2]">
             Discover What Our Community Is Saying
           </h2>
-          {/* Subtitle / Paragraph */}
           <p className="font-satoshi text-base leading-[1.6] text-[#4F4F4F] sm:text-lg lg:w-145">
             At ByteSpace, our vibrant community of learners and creators is at
             the heart of what we do. Hear directly from those who have
@@ -76,7 +69,6 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Testimonials Cards Row (Testimonial_Card) */}
         <div className="grid grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10.25">
           {TESTIMONIALS.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />

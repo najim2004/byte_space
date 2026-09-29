@@ -108,7 +108,6 @@ export function CoursesSection() {
   return (
     <section className="relative w-full bg-white py-18">
       <div className="mx-auto flex w-full max-w-300 flex-col items-center px-4 sm:px-6 lg:px-8">
-        {/* Section Header (Frame 3) */}
         <div className="flex max-w-229.25 flex-col items-center gap-4 text-center">
           <h2 className="font-poppins text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
             Discover Your Passion, <br className="hidden sm:inline" />
@@ -122,14 +121,12 @@ export function CoursesSection() {
           </p>
         </div>
 
-        {/* Category Pills (Tabs / Frames 6 & 7) */}
         <CourseCategories
           categoryRows={CATEGORY_ROWS}
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
         />
 
-        {/* Courses Grid (Frame 8) */}
         <div className="mt-12 grid w-full grid-cols-1 justify-items-center gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
           {COURSES.map((course) => (
             <CourseCard key={course.id} course={course} />

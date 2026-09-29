@@ -38,11 +38,8 @@ export function Footer() {
   return (
     <footer className="relative w-full border-t border-neutral-200 bg-white pt-18 pb-12">
       <div className="mx-auto flex w-full max-w-300 flex-col px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Nav Row */}
         <div className="flex flex-col justify-between gap-12 lg:flex-row lg:gap-23">
-          {/* Left Column: Brand & Newsletter Form */}
           <div className="flex w-full max-w-132 flex-col gap-6 sm:gap-11">
-            {/* Logo and Tagline */}
             <div className="flex flex-col gap-4">
               <Link href="/" className="inline-block w-fit">
                 <Image
@@ -59,7 +56,6 @@ export function Footer() {
               </p>
             </div>
 
-            {/* Newsletter Input + Button */}
             <div className="flex flex-col gap-6">
               <form
                 onSubmit={(e) => e.preventDefault()}
@@ -88,9 +84,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Right Columns: Nav Links */}
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-10 lg:gap-10">
-            {/* Column 1 */}
             <ul className="flex flex-col gap-4">
               {FOOTER_LINKS_COL_1.map((link, index) => (
                 <li key={index}>
@@ -104,7 +98,6 @@ export function Footer() {
               ))}
             </ul>
 
-            {/* Column 2 */}
             <ul className="flex flex-col gap-4">
               {FOOTER_LINKS_COL_2.map((link, index) => (
                 <li key={index}>
@@ -118,7 +111,6 @@ export function Footer() {
               ))}
             </ul>
 
-            {/* Column 3 */}
             <ul className="flex flex-col gap-4">
               {FOOTER_LINKS_COL_3.map((link, index) => (
                 <li key={index}>
@@ -134,7 +126,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Divider & Copyright Row */}
         <div className="mt-16 flex flex-col gap-6 pt-6 sm:mt-24 sm:gap-8">
           <div className="h-px w-full bg-neutral-200" />
           <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
