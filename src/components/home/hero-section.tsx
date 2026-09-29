@@ -24,7 +24,7 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="bg-hero-grid relative -mt-26.5 flex min-h-screen w-full flex-col overflow-hidden bg-[#003BE2] pt-26.5">
+    <section className="bg-hero-grid bg-primary-800 relative -mt-26.5 flex min-h-screen w-full flex-col overflow-hidden pt-26.5">
       <div className="my-12.5">
         <h1 className="font-poppins text-center text-7xl leading-tight font-semibold tracking-tight text-white">
           Get Access to Hundreds <br /> Courses Available
@@ -42,7 +42,7 @@ export function HeroSection() {
       </div>
       <div className="relative mt-24 min-h-132.5 w-full grow">
         {/* Big Yellow Arc in the Background */}
-        <div className="pointer-events-none absolute -bottom-5 left-1/2 w-full max-w-300 -translate-x-1/2">
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-300 -translate-x-1/2">
           <Image
             src="/assets/svgs/shapes/hero-bg-circle-yellow.svg"
             alt="Yellow Circle Arc"
@@ -65,7 +65,7 @@ export function HeroSection() {
         </div>
 
         {/* 3D Shape 1: Top Center Yellow Coil */}
-        <div className="animate-float-slow pointer-events-none absolute top-[-56%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
+        <div className="animate-float-slow pointer-events-none absolute top-[-60%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-yellow.png"
             alt="Yellow Coil"
@@ -99,7 +99,7 @@ export function HeroSection() {
         </div>
 
         {/* 3D Shape 5: Bottom Left White Torus */}
-        <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[12%] z-20 size-85.5 border select-none">
+        <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[11%] z-20 size-85.5 border select-none">
           <Image
             src="/assets/svgs/shapes/shape-ring-gray.png"
             alt="White Ring"
@@ -110,7 +110,7 @@ export function HeroSection() {
         </div>
 
         {/* 3D Shape 6: Bottom Right White Zigzag */}
-        <div className="animate-float-reverse pointer-events-none absolute right-[10.25%] bottom-[0%] z-20 w-82.5 select-none">
+        <div className="animate-float-reverse pointer-events-none absolute right-[9.5%] bottom-[0%] z-20 w-82.5 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-gray.png"
             alt="White Zigzag Right"
@@ -121,7 +121,7 @@ export function HeroSection() {
         </div>
 
         {/* Floating Card 1: UI/UX Design (shadcn Card) */}
-        <Card className="absolute top-[30%] left-[32%] z-30 gap-1 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <Card className="absolute top-[30%] left-[30.5%] z-30 gap-1 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <h4 className="font-satoshi text-sm leading-none font-semibold text-neutral-950 sm:text-base">
             UI/UX Design
           </h4>
@@ -133,7 +133,7 @@ export function HeroSection() {
         </Card>
 
         {/* Floating Card 2: Learning Progress (shadcn Card + Progress) */}
-        <Card className="absolute top-[30%] right-[31%] z-30 w-56 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <Card className="absolute top-[29%] right-[30%] z-30 w-56 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <span className="font-satoshi block text-sm leading-none font-medium text-neutral-950">
             Learning Progress
           </span>
@@ -143,12 +143,12 @@ export function HeroSection() {
           <Progress
             value={55}
             className="mt-1 h-2 rounded-full bg-neutral-100"
-            indicatorClassName="bg-[#D4FB20]"
+            indicatorClassName="bg-secondary-400"
           />
         </Card>
 
         {/* Floating Card 3: Happy Students (shadcn Card + AvatarGroup + Badge) */}
-        <Card className="absolute bottom-[8%] left-[5%] z-30 gap-2 rounded-2xl border-0 bg-white p-3.5 shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:bottom-[10%] sm:left-[14%] sm:p-4 lg:bottom-[12%] lg:left-[18%]">
+        <Card className="absolute bottom-[10%] left-[29%] z-30 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
           <div className="flex flex-col">
             <span className="font-satoshi text-sm leading-none font-semibold text-neutral-900 sm:text-base">
               Happy Students
