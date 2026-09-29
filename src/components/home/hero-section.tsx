@@ -24,16 +24,25 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="bg-hero-grid -mt-26.5 min-h-screen w-screen overflow-hidden bg-[#003BE2]">
-      <div className="relative mx-auto min-h-screen w-full max-w-300 border border-red-500 pt-28">
-        <div className="mt-12.5">
-          <h1 className="font-poppins text-center text-7xl leading-tight font-semibold tracking-tight text-white">
-            Get Access to Hundreds <br /> Courses Available
-          </h1>
-        </div>
-
+    <section className="bg-hero-grid relative -mt-26.5 flex min-h-screen w-full flex-col overflow-hidden bg-[#003BE2] pt-26.5">
+      <div className="my-12.5">
+        <h1 className="font-poppins text-center text-7xl leading-tight font-semibold tracking-tight text-white">
+          Get Access to Hundreds <br /> Courses Available
+        </h1>
+      </div>
+      {/* 3D Shape 2: Top Right Yellow Cylinder */}
+      <div className="animate-float pointer-events-none absolute top-1/2 right-[-9%] z-0 size-93 -translate-y-1/2 select-none">
+        <Image
+          src="/assets/svgs/shapes/shape-cylinder-yellow.png"
+          alt="Yellow Cylinder"
+          width={372}
+          height={372}
+          className="h-auto w-full object-contain"
+        />
+      </div>
+      <div className="relative mt-24 min-h-132.5 w-full grow">
         {/* Big Yellow Arc in the Background */}
-        <div className="pointer-events-none absolute -bottom-5 left-1/2 w-full -translate-x-1/2">
+        <div className="pointer-events-none absolute -bottom-5 left-1/2 w-full max-w-300 -translate-x-1/2">
           <Image
             src="/assets/svgs/shapes/hero-bg-circle-yellow.svg"
             alt="Yellow Circle Arc"
@@ -43,55 +52,43 @@ export function HeroSection() {
             className="h-auto w-full object-contain"
           />
         </div>
-
         {/* Center Student Photo */}
-        <div className="pointer-events-none absolute bottom-0 left-1/5 z-15 h-128 w-144.5 translate-x-1/5">
+        <div className="pointer-events-none absolute bottom-0 left-1/2 z-15 h-128 w-144.5 -translate-x-1/2">
           <Image
             src="/assets/images/home/hero-student.png"
             alt="ByteSpace Student"
             width={578}
             height={541}
             priority
-            className="h-full w-full object-cover drop-shadow-2xl"
+            className="ml-[6%] h-full w-full object-cover drop-shadow-2xl"
           />
         </div>
 
         {/* 3D Shape 1: Top Center Yellow Coil */}
-        <div className="animate-float-slow pointer-events-none absolute bottom-[48%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
+        <div className="animate-float-slow pointer-events-none absolute top-[-56%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-yellow.png"
             alt="Yellow Coil"
             width={385}
             height={385}
             priority
-            className="h-auto w-full rotate-6 object-contain"
-          />
-        </div>
-
-        {/* 3D Shape 2: Top Right Yellow Cylinder */}
-        <div className="animate-float -rotate- pointer-events-none absolute top-1/2 right-[-13%] z-0 size-93 -translate-y-1/2 select-none">
-          <Image
-            src="/assets/svgs/shapes/shape-cylinder-yellow.png"
-            alt="Yellow Cylinder"
-            width={372}
-            height={372}
             className="h-auto w-full object-contain"
           />
         </div>
 
         {/* 3D Shape 3: Left White Zigzag */}
-        <div className="animate-float-reverse pointer-events-none absolute top-[14%] left-[4%] z-10 w-20 select-none sm:top-[16%] sm:left-[8%] sm:w-28 lg:left-[11%] lg:w-36">
+        <div className="animate-float-reverse pointer-events-none absolute top-[-5%] left-[20%] z-10 w-44 select-none">
           <Image
-            src="/assets/svgs/shapes/shape-zigzag-gray.svg"
+            src="/assets/svgs/shapes/shape-zigzag-gray.png"
             alt="White Zigzag Left"
-            width={350}
-            height={350}
-            className="h-auto w-full -rotate-12 object-contain"
+            width={176}
+            height={176}
+            className="h-auto w-full object-contain"
           />
         </div>
 
         {/* 3D Shape 4: Middle Right White Pyramid */}
-        <div className="animate-float pointer-events-none absolute top-[18%] right-[6%] z-10 w-24 select-none sm:top-[20%] sm:right-[9%] sm:w-36 lg:right-[12%] lg:w-44">
+        <div className="animate-float pointer-events-none absolute top-[0%] right-[20%] z-10 w-47 select-none">
           <Image
             src="/assets/svgs/shapes/hero-shape-triangle-white.svg"
             alt="White Pyramid"
@@ -102,33 +99,33 @@ export function HeroSection() {
         </div>
 
         {/* 3D Shape 5: Bottom Left White Torus */}
-        <div className="animate-float-slow pointer-events-none absolute bottom-[2%] left-[-4%] z-20 w-44 select-none sm:bottom-[4%] sm:left-[0%] sm:w-64 lg:left-[3%] lg:w-84">
+        <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[12%] z-20 size-85.5 border select-none">
           <Image
-            src="/assets/svgs/shapes/shape-ring-gray.svg"
+            src="/assets/svgs/shapes/shape-ring-gray.png"
             alt="White Ring"
             width={400}
             height={400}
-            className="h-auto w-full -rotate-12 object-contain"
+            className="h-auto w-full object-contain"
           />
         </div>
 
         {/* 3D Shape 6: Bottom Right White Zigzag */}
-        <div className="animate-float-reverse pointer-events-none absolute right-[-3%] bottom-[2%] z-20 w-36 select-none sm:right-[1%] sm:bottom-[4%] sm:w-56 lg:right-[4%] lg:w-72">
+        <div className="animate-float-reverse pointer-events-none absolute right-[10.25%] bottom-[0%] z-20 w-82.5 select-none">
           <Image
-            src="/assets/svgs/shapes/shape-zigzag-gray.svg"
+            src="/assets/svgs/shapes/shape-zigzag-gray.png"
             alt="White Zigzag Right"
             width={350}
             height={350}
-            className="h-auto w-full rotate-25 object-contain"
+            className="h-auto w-full object-contain"
           />
         </div>
 
         {/* Floating Card 1: UI/UX Design (shadcn Card) */}
-        <Card className="absolute top-[26%] left-[6%] z-30 gap-1 rounded-2xl border-0 bg-white px-4 py-3 shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:top-[28%] sm:left-[16%] sm:px-5 sm:py-3.5 lg:top-[30%] lg:left-[22%]">
-          <h4 className="font-satoshi text-sm leading-none font-semibold text-neutral-900 sm:text-base">
+        <Card className="absolute top-[30%] left-[32%] z-30 gap-1 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+          <h4 className="font-satoshi text-sm leading-none font-semibold text-neutral-950 sm:text-base">
             UI/UX Design
           </h4>
-          <p className="font-satoshi mt-1 flex items-center gap-1.5 text-xs font-normal whitespace-nowrap text-neutral-500">
+          <p className="font-satoshi mt-1 flex items-center gap-1.5 text-xs font-normal whitespace-nowrap text-neutral-400">
             <span>200 Courses</span>
             <span>•</span>
             <span>1000+ Students</span>
@@ -136,11 +133,11 @@ export function HeroSection() {
         </Card>
 
         {/* Floating Card 2: Learning Progress (shadcn Card + Progress) */}
-        <Card className="absolute top-[30%] right-[5%] z-30 w-40 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1 sm:top-[32%] sm:right-[14%] sm:w-52 sm:p-5 lg:top-[34%] lg:right-[19%] lg:w-56">
-          <span className="font-satoshi block text-xs leading-none font-medium text-neutral-600">
+        <Card className="absolute top-[30%] right-[31%] z-30 w-56 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+          <span className="font-satoshi block text-sm leading-none font-medium text-neutral-950">
             Learning Progress
           </span>
-          <span className="font-poppins block text-3xl leading-none font-bold text-neutral-950 sm:text-4xl">
+          <span className="font-poppins mt-2 mb-5 block text-3xl leading-none font-semibold text-neutral-950 sm:text-4xl lg:text-[48px]">
             55%
           </span>
           <Progress
@@ -162,19 +159,16 @@ export function HeroSection() {
             </div>
           </div>
 
-          <AvatarGroup className="mt-1 -space-x-2.5">
+          <AvatarGroup className="mt-1 -space-x-4">
             {avatars.map((src, i) => (
-              <Avatar
-                key={i}
-                className="size-7 border-2 border-white ring-0 sm:size-8"
-              >
+              <Avatar key={i} className="size-7 border-0 ring-0! sm:size-11">
                 <AvatarImage src={src} alt={`Student ${i + 1}`} />
                 <AvatarFallback>S</AvatarFallback>
               </Avatar>
             ))}
             <Badge
               variant="lime"
-              className="flex size-7 items-center justify-center rounded-full border-2 border-white p-0 text-xs font-bold shadow-xs sm:size-8"
+              className="relative z-10 flex size-7 items-center justify-center rounded-full border-0 p-0 text-xs font-bold shadow-xs ring-0! sm:size-11"
             >
               2K+
             </Badge>
