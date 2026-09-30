@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingBag, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Navbar() {
@@ -63,9 +63,15 @@ export function Navbar() {
           variant="ghost"
           size="icon-sm"
           aria-label="Shopping Cart"
-          className="rounded-full text-neutral-100 hover:bg-white/10 hover:text-white"
+          className="rounded-full hover:bg-white/10"
         >
-          <ShoppingBag className="size-5 stroke-[1.8]" />
+          <Image
+            src="/assets/svgs/icons/shoping-bag-gray.svg"
+            alt="Shopping Bag"
+            width={20}
+            height={20}
+            className="size-5"
+          />
         </Button>
       </div>
 
@@ -74,9 +80,15 @@ export function Navbar() {
           variant="ghost"
           size="icon-sm"
           aria-label="Shopping Cart"
-          className="rounded-full text-neutral-100 hover:bg-white/10 hover:text-white"
+          className="rounded-full hover:bg-white/10"
         >
-          <ShoppingBag className="size-5" />
+          <Image
+            src="/assets/svgs/icons/shoping-bag-gray.svg"
+            alt="Shopping Bag"
+            width={20}
+            height={20}
+            className="size-5"
+          />
         </Button>
         <Button
           variant="ghost"

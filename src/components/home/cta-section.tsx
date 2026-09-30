@@ -3,7 +3,7 @@ import Image from "next/image";
 export function CtaSection() {
   return (
     <section className="bg-hero-grid bg-primary-800 relative flex min-h-122 w-full items-center justify-center overflow-hidden py-18 lg:py-0">
-      <div className="animate-float pointer-events-none absolute -top-40 -left-30 z-0 size-44 -rotate-45 select-none lg:size-96.25">
+      <div className="animate-float pointer-events-none absolute -top-16 sm:-top-24 md:-top-32 lg:-top-40 -left-12 sm:-left-20 lg:-left-30 z-0 size-24 sm:size-32 md:size-44 lg:size-96.25 -rotate-45 select-none">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-yellow.png"
           alt="Yellow Coil"
@@ -13,7 +13,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float-slow pointer-events-none absolute top-4 left-[13%] z-0 size-24 rotate-12 select-none lg:size-36">
+      <div className="animate-float-slow pointer-events-none absolute top-2 sm:top-4 left-[2%] sm:left-[13%] z-0 size-16 sm:size-24 lg:size-36 rotate-12 select-none">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-gray.png"
           alt="White Zigzag"
@@ -23,7 +23,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float-reverse pointer-events-none absolute bottom-[20%] left-[-2%] z-0 size-28 -rotate-12 select-none lg:size-47">
+      <div className="animate-float-reverse pointer-events-none absolute bottom-[10%] sm:bottom-[20%] left-[0%] sm:left-[-2%] z-0 size-16 sm:size-28 lg:size-47 -rotate-12 select-none">
         <Image
           src="/assets/svgs/shapes/cone-gray.png"
           alt="White Cone"
@@ -33,7 +33,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float pointer-events-none absolute bottom-[-30%] left-[5%] z-0 size-44 rotate-45 select-none lg:size-85.5">
+      <div className="animate-float pointer-events-none absolute bottom-[-15%] sm:bottom-[-30%] left-[2%] sm:left-[5%] z-0 size-24 sm:size-32 md:size-44 lg:size-85.5 rotate-45 select-none">
         <Image
           src="/assets/svgs/shapes/shape-ring-yellow.png"
           alt="Yellow Ring"
@@ -43,7 +43,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float-slow pointer-events-none absolute top-[5%] right-[15%] z-0 size-32 rotate-12 select-none lg:size-47">
+      <div className="animate-float-slow pointer-events-none absolute top-[2%] sm:top-[5%] right-[5%] sm:right-[15%] z-0 size-16 sm:size-24 md:size-32 lg:size-47 rotate-12 select-none">
         <Image
           src="/assets/svgs/shapes/hero-shape-triangle-yellow.png"
           alt="Yellow Pyramid"
@@ -53,7 +53,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float-reverse pointer-events-none absolute top-[10%] right-[-7%] z-0 size-48 rotate-12 select-none lg:size-92.5">
+      <div className="animate-float-reverse pointer-events-none absolute top-[5%] sm:top-[10%] right-[-2%] sm:right-[-7%] z-0 size-24 sm:size-32 md:size-48 lg:size-92.5 rotate-12 select-none">
         <Image
           src="/assets/svgs/shapes/shape-cylinder-gray.png"
           alt="White Cylinder"
@@ -63,7 +63,7 @@ export function CtaSection() {
         />
       </div>
 
-      <div className="animate-float pointer-events-none absolute right-[5%] bottom-[-25%] z-0 size-44 rotate-12 select-none lg:size-82.5">
+      <div className="animate-float pointer-events-none absolute right-[2%] sm:right-[5%] bottom-[-15%] sm:bottom-[-25%] z-0 size-24 sm:size-32 md:size-44 lg:size-82.5 rotate-12 select-none">
         <Image
           src="/assets/svgs/shapes/shape-zigzag-yellow.png"
           alt="Yellow Coil"

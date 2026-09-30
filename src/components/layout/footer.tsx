@@ -71,7 +71,7 @@ export function Footer() {
                 </div>
                 <Button
                   type="submit"
-                  className="font-satoshi bg-secondary-400 hover:bg-secondary-500 h-11.5 rounded-full px-6 text-lg font-medium text-neutral-950 shadow-none transition-all duration-200"
+                  className="font-satoshi w-full sm:w-auto bg-secondary-400 hover:bg-secondary-500 h-11.5 rounded-full px-6 text-lg font-medium text-neutral-950 shadow-none transition-all duration-200"
                 >
                   Search
                 </Button>

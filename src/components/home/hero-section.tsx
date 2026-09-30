@@ -26,11 +26,12 @@ export function HeroSection() {
   return (
     <section className="bg-hero-grid bg-primary-800 relative -mt-26.5 flex min-h-screen w-full flex-col overflow-hidden pt-26.5">
       <div className="my-12.5">
-        <h1 className="font-poppins text-center text-7xl leading-tight font-semibold tracking-tight text-white">
-          Get Access to Hundreds <br /> Courses Available
+        <h1 className="font-poppins px-4 text-center text-4xl leading-tight font-semibold tracking-tight text-white sm:text-5xl md:text-6xl lg:px-0 lg:text-7xl">
+          Get Access to Hundreds <br className="hidden sm:block" /> Courses
+          Available
         </h1>
       </div>
-      <div className="animate-float pointer-events-none absolute top-1/2 right-[-9%] z-0 size-93 -translate-y-1/2 select-none">
+      <div className="animate-float pointer-events-none absolute top-1/2 right-[-9%] z-0 w-48 -translate-y-1/2 select-none lg:size-52 xl:right-[-12%] xl:size-72 2xl:right-[-8%] 2xl:size-93">
         <Image
           src="/assets/svgs/shapes/shape-cylinder-yellow.png"
           alt="Yellow Cylinder"
@@ -39,8 +40,8 @@ export function HeroSection() {
           className="h-auto w-full object-contain"
         />
       </div>
-      <div className="relative mt-24 min-h-132.5 w-full grow">
-        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-300 -translate-x-1/2">
+      <div className="relative mt-20 min-h-120 w-full grow lg:mt-24 lg:min-h-132.5">
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-162.5 -translate-x-1/2 lg:max-w-300">
           <Image
             src="/assets/svgs/shapes/hero-bg-circle-yellow.svg"
             alt="Yellow Circle Arc"
@@ -50,7 +51,7 @@ export function HeroSection() {
             className="h-auto w-full object-contain"
           />
         </div>
-        <div className="pointer-events-none absolute bottom-0 left-1/2 z-15 h-128 w-144.5 -translate-x-1/2">
+        <div className="pointer-events-none absolute bottom-0 left-1/2 z-15 h-100 w-115 -translate-x-1/2 lg:h-128 lg:w-144.5">
           <Image
             src="/assets/images/home/hero-student.png"
             alt="ByteSpace Student"
@@ -61,7 +62,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="animate-float-slow pointer-events-none absolute top-[-60%] left-1/2 z-0 size-96.25 -translate-x-1/2 translate-y-1/2 select-none">
+        <div className="animate-float-slow pointer-events-none absolute top-[-50%] left-1/2 z-0 w-48 -translate-x-1/2 translate-y-1/2 select-none lg:size-48 xl:top-[-40%] xl:size-64 2xl:top-[-60%] 2xl:size-96.25">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-yellow.png"
             alt="Yellow Coil"
@@ -72,7 +73,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="animate-float-reverse pointer-events-none absolute top-[-5%] left-[20%] z-10 w-44 select-none">
+        <div className="animate-float-reverse pointer-events-none absolute top-[-5%] left-[10%] z-10 w-32 select-none lg:left-[20%] xl:w-38 2xl:top-[0%] 2xl:w-44">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-gray.png"
             alt="White Zigzag Left"
@@ -82,7 +83,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="animate-float pointer-events-none absolute top-[0%] right-[20%] z-10 w-47 select-none">
+        <div className="animate-float pointer-events-none absolute top-[0%] right-[10%] z-10 w-32 select-none lg:right-[20%] lg:size-30 xl:size-38 2xl:size-47">
           <Image
             src="/assets/svgs/shapes/hero-shape-triangle-white.svg"
             alt="White Pyramid"
@@ -92,7 +93,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[11%] z-20 size-85.5 border select-none">
+        <div className="animate-float-slow pointer-events-none absolute bottom-[-3%] left-[5%] z-20 w-44 border select-none lg:size-57.5 xl:left-[-5%] xl:size-72 2xl:left-[11%] 2xl:size-85.5">
           <Image
             src="/assets/svgs/shapes/shape-ring-gray.png"
             alt="White Ring"
@@ -102,7 +103,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="animate-float-reverse pointer-events-none absolute right-[9.5%] bottom-[0%] z-20 w-82.5 select-none">
+        <div className="animate-float-reverse pointer-events-none absolute right-[5%] bottom-[0%] z-20 w-48 select-none lg:size-52.5 xl:right-[-4%] xl:size-64 2xl:right-[9.5%] 2xl:size-82.5">
           <Image
             src="/assets/svgs/shapes/shape-zigzag-gray.png"
             alt="White Zigzag Right"
@@ -112,7 +113,7 @@ export function HeroSection() {
           />
         </div>
 
-        <Card className="absolute top-[30%] left-[30.5%] z-30 gap-1 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <Card className="absolute top-[25%] left-[20%] z-30 flex origin-top-left scale-90 gap-1 rounded-2xl border-0 bg-white p-3 shadow-xl transition-transform duration-300 hover:-translate-y-1 lg:top-[30%] lg:scale-100 lg:p-4 xl:left-[20%] 2xl:left-[30.5%]">
           <h4 className="font-satoshi text-sm leading-none font-semibold text-neutral-950 sm:text-base">
             UI/UX Design
           </h4>
@@ -123,7 +124,7 @@ export function HeroSection() {
           </p>
         </Card>
 
-        <Card className="absolute top-[29%] right-[30%] z-30 w-56 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <Card className="absolute top-[25%] right-[20%] z-30 flex w-48 origin-top-right scale-90 flex-col gap-2 rounded-2xl border-0 bg-white p-3 shadow-xl transition-transform duration-300 hover:-translate-y-1 lg:top-[29%] lg:w-56 lg:scale-100 lg:p-4 xl:right-[20%] 2xl:right-[30%]">
           <span className="font-satoshi block text-sm leading-none font-medium text-neutral-950">
             Learning Progress
           </span>
@@ -137,7 +138,7 @@ export function HeroSection() {
           />
         </Card>
 
-        <Card className="absolute bottom-[10%] left-[29%] z-30 gap-2 rounded-2xl border-0 bg-white p-4 shadow-xl transition-transform duration-300 hover:-translate-y-1">
+        <Card className="absolute bottom-[8%] left-[20%] z-30 flex origin-bottom-left scale-90 gap-2 rounded-2xl border-0 bg-white p-3 shadow-xl transition-transform duration-300 hover:-translate-y-1 lg:bottom-[10%] lg:left-[29%] lg:scale-100 lg:p-4">
           <div className="flex flex-col">
             <span className="font-satoshi text-sm leading-none font-semibold text-neutral-900 sm:text-base">
               Happy Students

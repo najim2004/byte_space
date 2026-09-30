@@ -36,20 +36,23 @@ export default function LoginPage() {
   return (
     <div className="bg-hero-grid bg-primary-800 relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden p-6 sm:p-10 lg:p-12">
       <header className="relative z-30 mx-auto w-full max-w-300">
-        <Link href="/" className="inline-block transition-opacity hover:opacity-90">
+        <Link
+          href="/"
+          className="inline-block transition-opacity hover:opacity-90"
+        >
           <Image
-            src="/assets/svgs/logos/logo-bytespace.svg"
+            src="/assets/svgs/logos/logo-without-text.svg"
             alt="ByteSpace Logo"
-            width={171}
-            height={37}
+            width={32}
+            height={32}
             priority
             className="h-8 w-auto object-contain lg:h-9"
           />
         </Link>
       </header>
 
-      <main className="relative z-20 mx-auto my-auto flex w-full max-w-300 flex-col items-center justify-between gap-12 py-8 lg:flex-row lg:items-start lg:gap-16">
-        <div className="flex w-full max-w-135 flex-col gap-10">
+      <main className="relative z-20 mx-auto my-auto flex w-full max-w-305.5 flex-col items-center justify-between gap-12 py-8 lg:flex-row lg:items-start lg:gap-23.75">
+        <div className="flex w-full max-w-137 flex-col gap-21.75">
           <div className="flex flex-col gap-4">
             <h1 className="font-poppins text-xl font-semibold tracking-[-0.01em] text-[#F5F5F6] sm:text-2xl">
               Sign in with ease
@@ -60,38 +63,38 @@ export default function LoginPage() {
             </p>
           </div>
 
-          <div className="relative mt-4 hidden h-140 w-full select-none md:block">
-            <div className="animate-float pointer-events-none absolute -top-8 -left-4 z-20 size-24 lg:size-28">
+          <div className="relative mt-4 hidden h-146.25 w-137 shrink-0 select-none lg:block">
+            <div className="animate-float pointer-events-none absolute -top-5 left-15 z-30 size-43.75">
               <Image
                 src="/assets/svgs/shapes/shape-ring-yellow.png"
                 alt="Yellow Torus"
-                width={112}
-                height={112}
+                width={175}
+                height={175}
                 className="h-auto w-full object-contain"
               />
             </div>
 
-            <div className="animate-float-slow pointer-events-none absolute -bottom-6 -left-6 z-30 size-28 lg:size-32">
+            <div className="animate-float-slow pointer-events-none absolute top-100 -left-5 z-40 size-47">
               <Image
                 src="/assets/svgs/shapes/hero-shape-triangle-yellow.png"
                 alt="Yellow Pyramid"
-                width={128}
-                height={128}
+                width={188}
+                height={188}
                 className="h-auto w-full object-contain"
               />
             </div>
 
-            <div className="animate-float-reverse pointer-events-none absolute right-4 bottom-2 z-10 size-32 lg:size-36">
+            <div className="animate-float-reverse pointer-events-none absolute top-87.5 left-95 z-10 size-36.5">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-gray.png"
                 alt="White Zigzag"
-                width={144}
-                height={144}
+                width={146}
+                height={146}
                 className="h-auto w-full object-contain"
               />
             </div>
 
-            <div className="absolute top-22 left-0 z-10 w-93.25 rounded-3xl border border-[#CED0D3] bg-white p-4 shadow-md transition-transform duration-300 hover:scale-[1.02]">
+            <div className="absolute top-22.25 left-6.25 z-10 w-93.25 rounded-3xl border border-[#CED0D3] bg-white p-4 shadow-md transition-transform duration-300 hover:scale-[1.02]">
               <div className="relative h-48.75 w-full overflow-hidden rounded-xl bg-neutral-100">
                 <Image
                   src="/assets/images/courses/course-2.avif"
@@ -124,7 +127,9 @@ export default function LoginPage() {
                     </p>
                   </div>
                   <div className="flex items-center gap-1 text-[#4F4F4F]">
-                    <span className="font-satoshi text-lg font-medium">4.5</span>
+                    <span className="font-satoshi text-lg font-medium">
+                      4.5
+                    </span>
                     <Image
                       src="/assets/svgs/icons/star-yellow.svg"
                       alt="Star"
@@ -181,7 +186,7 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <div className="absolute top-0 left-28 z-20 w-93.25 rounded-3xl border border-[#CED0D3] bg-white p-4 shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+            <div className="absolute top-0 left-34 z-20 w-93.25 rounded-3xl border border-[#CED0D3] bg-white p-4 shadow-xl transition-transform duration-300 hover:scale-[1.02]">
               <div className="relative h-48.75 w-full overflow-hidden rounded-xl bg-neutral-100">
                 <Image
                   src="/assets/images/courses/course-3.avif"
@@ -214,7 +219,9 @@ export default function LoginPage() {
                     </p>
                   </div>
                   <div className="flex items-center gap-1 text-[#4F4F4F]">
-                    <span className="font-satoshi text-lg font-medium">4.5</span>
+                    <span className="font-satoshi text-lg font-medium">
+                      4.5
+                    </span>
                     <Image
                       src="/assets/svgs/icons/star-yellow.svg"
                       alt="Star"
@@ -271,13 +278,13 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <div className="bg-secondary-400 absolute right-4 bottom-2 z-30 flex w-64.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px]">
+            <div className="bg-secondary-400 absolute top-108.75 left-62.75 z-30 flex w-64.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px]">
               <div className="flex flex-col">
-                <span className="font-satoshi text-base font-medium text-[#242528]">
+                <span className="font-satoshi text-base font-medium text-neutral-950">
                   Happy Students
                 </span>
                 <div className="flex items-center gap-1">
-                  <span className="font-satoshi text-[10px] font-bold text-[#242528]">
+                  <span className="font-satoshi text-[10px] font-bold text-neutral-950">
                     4.5 (240)
                   </span>
                   <Star className="size-3.5 fill-[#003BE2] stroke-none text-[#003BE2]" />
@@ -299,7 +306,7 @@ export default function LoginPage() {
                     />
                   </div>
                 ))}
-                <div className="relative -ml-3.5 flex size-9 items-center justify-center rounded-full bg-[#242528]">
+                <div className="relative -ml-3.5 flex size-9 items-center justify-center rounded-full bg-neutral-950">
                   <span className="font-satoshi text-xs font-bold text-[#F5F5F6]">
                     2K+
                   </span>
@@ -309,22 +316,22 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <div className="w-full max-w-144.75 rounded-3xl bg-white p-8 shadow-2xl sm:p-12 lg:p-15.25">
-          <div className="flex flex-col gap-10">
+        <div className="w-full max-w-144.75 shrink-0 rounded-3xl bg-white p-8 shadow-2xl sm:p-12 lg:h-196 lg:px-15.75 lg:py-[50.5px]">
+          <div className="flex h-full flex-col justify-between">
             <div className="flex flex-col gap-2">
               <span className="font-satoshi text-primary-800 text-lg font-normal">
                 Sign In
               </span>
-              <h2 className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-[#242528] sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
+              <h2 className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
                 Welcome Back
               </h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+            <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-6">
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
-                  className="font-satoshi text-sm font-medium text-[#242528]"
+                  className="font-satoshi text-sm font-medium text-neutral-950"
                 >
                   Email
                 </label>
@@ -337,14 +344,14 @@ export default function LoginPage() {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="font-satoshi h-13 w-full rounded-xl border border-[#E5E6E8] bg-white px-6 text-lg text-[#242528] placeholder:text-[#82868E] focus:border-[#003BE2] focus:outline-none"
+                  className="font-satoshi h-13 w-full rounded-xl border border-[#E5E6E8] bg-white px-6 text-lg text-neutral-950 placeholder:text-[#82868E] focus:border-[#003BE2] focus:outline-none"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="password"
-                  className="font-satoshi text-sm font-medium text-[#242528]"
+                  className="font-satoshi text-sm font-medium text-neutral-950"
                 >
                   Password
                 </label>
@@ -357,21 +364,21 @@ export default function LoginPage() {
                     setFormData({ ...formData, password: e.target.value })
                   }
                   required
-                  className="font-satoshi h-13 w-full rounded-xl border border-[#E5E6E8] bg-white px-6 text-lg text-[#242528] placeholder:text-[#82868E] focus:border-[#003BE2] focus:outline-none"
+                  className="font-satoshi h-13 w-full rounded-xl border border-[#E5E6E8] bg-white px-6 text-lg text-neutral-950 placeholder:text-[#82868E] focus:border-[#003BE2] focus:outline-none"
                 />
               </div>
 
               <div className="flex justify-end pt-2">
                 <Button
                   type="submit"
-                  className="bg-secondary-400 hover:bg-secondary-500 font-satoshi h-11.5 rounded-full px-8 text-lg font-medium text-[#242528] shadow-none transition-all duration-200"
+                  className="bg-secondary-400 hover:bg-secondary-500 font-satoshi h-11.5 rounded-full px-8 text-lg font-medium text-neutral-950 shadow-none transition-all duration-200"
                 >
                   Sign In
                 </Button>
               </div>
             </form>
 
-            <div className="flex flex-col items-center gap-6">
+            <div className="mt-auto flex flex-col items-center gap-10 pt-10">
               <div className="flex w-full items-center gap-3">
                 <div className="h-px flex-1 bg-[#D1D1D1]" />
                 <span className="font-satoshi text-lg text-[#888888]">or</span>
@@ -408,7 +415,7 @@ export default function LoginPage() {
                 </button>
               </div>
 
-              <div className="flex items-center justify-center gap-1.5 pt-2 text-center">
+              <div className="flex items-center justify-center gap-1.5 pt-0 text-center">
                 <span className="font-satoshi text-base text-[#888888]">
                   New user?
                 </span>

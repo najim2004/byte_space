@@ -115,8 +115,8 @@ export function FeaturesSection() {
             </div>
           </div>
 
-          <div className="relative flex h-120 w-full max-w-125 items-center justify-center sm:h-138 sm:max-w-155.25">
-            <div className="animate-float pointer-events-none absolute top-[10%] right-[5%] z-40 w-45 select-none sm:right-[-5%] sm:size-53.75">
+          <div className="relative flex h-87.5 w-full max-w-full items-center justify-center sm:h-138 sm:max-w-155.25 lg:h-120 lg:max-w-125">
+            <div className="animate-float pointer-events-none absolute top-[10%] right-[5%] z-40 w-32 select-none sm:right-[-5%] sm:w-45 lg:size-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
                 alt="Yellow Coil"
@@ -218,7 +218,7 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            <div className="relative top-15 -right-10 z-20 h-120 w-112.5 sm:h-135 sm:w-144.25">
+            <div className="relative top-5 right-0 z-20 h-75 w-70 sm:top-15 sm:-right-10 sm:h-135 sm:w-144.25 lg:h-120 lg:w-112.5">
               <Image
                 src="/assets/images/home/feature-student-1.svg"
                 alt="Student Learning"
@@ -228,11 +228,11 @@ export function FeaturesSection() {
               />
             </div>
 
-            <div className="absolute top-50 right-5 z-30 flex w-50 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
+            <div className="absolute top-1/2 right-0 z-30 flex w-40 flex-col gap-2 rounded-2xl bg-white p-3 shadow-xl backdrop-blur-[10px] sm:top-50 sm:right-5 sm:w-58 sm:p-4">
               <span className="font-satoshi text-sm font-medium text-neutral-950">
                 Learning Progress
               </span>
-              <span className="font-poppins text-3xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-[48px] sm:leading-[1.2]">
+              <span className="font-poppins text-2xl font-semibold tracking-[-0.01em] text-neutral-950 sm:text-3xl lg:text-[48px] lg:leading-[1.2]">
                 55%
               </span>
               <div className="relative h-2 w-full overflow-hidden rounded-3xl bg-[#F6F6F6]">
@@ -243,8 +243,8 @@ export function FeaturesSection() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-12 lg:flex-row lg:gap-19.75">
-          <div className="relative order-2 flex h-125 w-full max-w-125 items-center justify-center sm:h-149 sm:max-w-135.25 lg:order-1">
-            <div className="animate-float-slow pointer-events-none absolute top-[19%] right-[10%] z-40 w-45 select-none sm:w-53.75">
+          <div className="relative order-2 flex h-100 w-full max-w-full items-center justify-center sm:h-149 sm:max-w-135.25 lg:order-1 lg:h-125 lg:max-w-125">
+            <div className="animate-float-slow pointer-events-none absolute top-[19%] right-[5%] z-40 w-32 select-none sm:w-45 lg:w-53.75">
               <Image
                 src="/assets/svgs/shapes/shape-zigzag-yellow.png"
                 alt="Yellow Coil"
@@ -254,7 +254,7 @@ export function FeaturesSection() {
               />
             </div>
 
-            <div className="bg-primary-800 absolute top-11 left-0 z-30 flex w-47.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px] sm:w-58">
+            <div className="bg-primary-800 absolute top-5 left-0 z-30 flex w-40 flex-col gap-2 rounded-2xl p-3 shadow-xl backdrop-blur-[10px] sm:top-11 sm:w-58 sm:p-4">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-50 sm:text-base">
                   Total Revenue
@@ -264,7 +264,7 @@ export function FeaturesSection() {
                 </span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="font-poppins text-xl font-semibold tracking-[-0.01em] text-neutral-50 sm:text-2xl">
+                <span className="font-poppins text-lg font-semibold tracking-[-0.01em] text-neutral-50 sm:text-xl lg:text-2xl">
                   $120.29
                 </span>
                 <span className="font-satoshi bg-secondary-500 rounded-3xl px-2 py-0.5 text-[10px] font-medium text-neutral-950">
@@ -276,7 +276,7 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            <div className="bg-primary-800 absolute top-48.5 left-0 z-30 flex w-33.5 flex-col gap-2 rounded-2xl p-4 shadow-xl backdrop-blur-[10px]">
+            <div className="bg-primary-800 absolute top-36 left-0 z-30 flex w-32 flex-col gap-2 rounded-2xl p-3 shadow-xl backdrop-blur-[10px] sm:top-48.5 sm:w-33.5 sm:p-4">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-50 sm:text-base">
                   Year to Date
@@ -285,7 +285,7 @@ export function FeaturesSection() {
                   2023
                 </span>
               </div>
-              <span className="font-poppins text-lg font-semibold tracking-[-0.01em] text-neutral-50 sm:text-2xl">
+              <span className="font-poppins text-base font-semibold tracking-[-0.01em] text-neutral-50 sm:text-lg lg:text-2xl">
                 $1,200.38
               </span>
               <div>
@@ -295,7 +295,7 @@ export function FeaturesSection() {
               </div>
             </div>
 
-            <div className="relative -bottom-10 z-30 h-125 w-95 sm:h-149 sm:w-135.25">
+            <div className="relative -bottom-5 z-30 h-75 w-65 sm:-bottom-10 sm:h-149 sm:w-135.25 lg:h-125 lg:w-95">
               <Image
                 src="/assets/images/home/feature-student-2.png"
                 alt="Student Creator"
@@ -304,7 +304,7 @@ export function FeaturesSection() {
               />
             </div>
 
-            <div className="absolute right-0 bottom-25 z-30 flex w-57.5 flex-col gap-2 rounded-2xl bg-white p-4 shadow-xl backdrop-blur-[10px] sm:w-64.5">
+            <div className="absolute right-0 bottom-10 z-30 flex w-48 flex-col gap-2 rounded-2xl bg-white p-3 shadow-xl backdrop-blur-[10px] sm:bottom-25 sm:w-64.5 sm:p-4">
               <div className="flex flex-col">
                 <span className="font-satoshi text-sm font-medium text-neutral-950 sm:text-base">
                   Happy Students
