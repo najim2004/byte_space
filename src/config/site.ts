@@ -1,11 +1,11 @@
-import { env } from "@/lib/env";
+import "@/lib/env";
 
 export const siteConfig = {
-  name: env.NEXT_PUBLIC_APP_NAME,
-  description: "Industry-grade Next.js application.",
-  url: "https://example.com",
+  name: "Byte Space",
+  description: "Byte Space - An innovative platform built with industry-grade Next.js architecture.",
+  url: "https://bytespace.example.com",
   links: {
-    github: "https://github.com",
+    github: "https://github.com/najim2004/byte_space",
   },
 } as const;
 
